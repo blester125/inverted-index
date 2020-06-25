@@ -43,7 +43,7 @@ setup(
     package_data={"inverted_index": [],},
     include_package_data=True,
     install_requires=[],
-    extras_require={"test": ["pytest"],},
+    extras_require={"test": ["pytest"], "prompt": ["prompt_toolkit"]},
     keywords=[],
     ext_modules=ext_modules,
     entry_points={"console_scripts": [],},

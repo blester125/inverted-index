@@ -1,3 +1,13 @@
-__version__ = "0.0.0"
+__version__ = "0.1.0"
 
-print("This is a placeholder for inverted_index")
+
+from inverted_index.inverted_index import (
+    InvertedIndex,
+    FromDiskInvertedIndex,
+    LevenshteinRankingInvertedIndex,
+)
+
+try:
+    from inverted_index.prompt import SearchCompleter
+except ImportError:
+    pass
